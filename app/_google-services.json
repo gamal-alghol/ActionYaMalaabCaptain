@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "15437329303",
+    "firebase_url": "https://actionyamalaab.firebaseio.com",
+    "project_id": "actionyamalaab",
+    "storage_bucket": "actionyamalaab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15437329303:android:9b3d72e430998c37",
+        "android_client_info": {
+          "package_name": "com.malaab.ya.action.actionyamalaab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15437329303-d95jstbghd2co4atddnpdejbo5tk2irm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab",
+            "certificate_hash": "e9c8c9f2e9b439279497a3be853eb7c70dbd58d0"
+          }
+        },
+        {
+          "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgPJLARzGdUPhqx9aJ2mXW4u71hTOvPUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

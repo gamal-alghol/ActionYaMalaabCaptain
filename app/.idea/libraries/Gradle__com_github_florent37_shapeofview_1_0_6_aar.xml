@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.florent37:shapeofview:1.0.6@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/8fdadf577ba303ee2678779bdcbca60d/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/8fdadf577ba303ee2678779bdcbca60d/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/8fdadf577ba303ee2678779bdcbca60d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/8fdadf577ba303ee2678779bdcbca60d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/modules-2/files-2.1/com.github.florent37/shapeofview/1.0.6/c7347807509e6ae9478bd2f67a913c4d9c23a526/shapeofview-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

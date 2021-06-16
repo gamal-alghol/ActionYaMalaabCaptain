@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="@dimen/list_item_small"
+    android:layout_height="@dimen/list_item_medium_s"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txt_dayName"
+        style="@style/SemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_dayDate"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Day"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/txt_caption" />
+
+    <TextView
+        android:id="@+id/txt_dayDate"
+        style="@style/Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_monthName"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="19"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/txt_subheading" />
+
+    <TextView
+        android:id="@+id/txt_monthName"
+        style="@style/SemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_isSelected"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Month"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/txt_caption" />
+
+    <TextView
+        android:id="@+id/txt_isSelected"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/black_effective"
+        android:visibility="invisible" />
+
+</RelativeLayout>

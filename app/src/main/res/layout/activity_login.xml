@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+
+
+        <FrameLayout
+            android:id="@+id/fr_logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_size_xlarge"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_logo_white" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginStart="@dimen/margin_15"
+            android:gravity="center"
+            android:maxLines="3"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/red"
+            android:textSize="@dimen/txt_default"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fr_logo" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/btn_rounded_white"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_subheading"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_loginByPhoneNumber"
+            app:layout_constraintEnd_toEndOf="@id/btn_register"
+            app:layout_constraintStart_toStartOf="@id/btn_register" />
+
+        <TextView
+            android:id="@+id/txt_loginByPhoneNumber"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:visibility="gone"
+            android:background="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:text="@string/login_by_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            app:layout_constraintEnd_toEndOf="@id/btn_register"
+            app:layout_constraintStart_toStartOf="@id/btn_register" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_35"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:layout_marginStart="@dimen/margin_25"
+            android:background="@drawable/btn_rounded_transparent"
+            android:padding="@dimen/padding_10"
+            android:text="@string/msg_no_account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintBottom_toTopOf="@id/fr_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <FrameLayout
+            android:id="@+id/fr_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#8acacaca"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_skip"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="?selectableItemBackgroundBorderless"
+                android:minHeight="0dp"
+                android:padding="@dimen/padding_3"
+                android:text="@string/skip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_default"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_arabic"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="?selectableItemBackgroundBorderless"
+                android:minHeight="0dp"
+                android:padding="@dimen/padding_3"
+                android:text="@string/arabic"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_default"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_arabic"-->
+                <!--style="@style/Bold"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:background="?selectableItemBackgroundBorderless"-->
+                <!--android:minHeight="0dp"-->
+                <!--android:padding="@dimen/padding_3"-->
+                <!--android:text="@string/arabic"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/txt_default"-->
+                <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <include layout="@layout/bsheet_login" />
+
+</android.support.design.widget.CoordinatorLayout>

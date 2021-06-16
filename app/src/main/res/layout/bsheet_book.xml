@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bSheet_book"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    app:layout_behavior="com.malaab.ya.action.actionyamalaab.custom.LockableBottomSheetBehavior">
+
+    <ProgressBar
+        android:id="@+id/pBar_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_5"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsc_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_continue"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/padding_15">
+
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/Bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/black_effective"
+                android:textSize="@dimen/txt_headline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                style="@style/SemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/black_effective"
+                android:textSize="@dimen/txt_subheading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/padding_2"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@id/btn_location"
+                app:layout_constraintEnd_toStartOf="@id/btn_location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_location"
+                app:srcCompat="@drawable/icon_share" />
+
+            <TextView
+                android:id="@+id/txt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_caption"
+                app:layout_constraintEnd_toEndOf="@id/btn_share"
+                app:layout_constraintStart_toStartOf="@id/btn_share"
+                app:layout_constraintTop_toBottomOf="@+id/btn_share" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_location"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/padding_2"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorAccent"
+                app:layout_constraintEnd_toStartOf="@id/btn_favourite"
+                app:layout_constraintStart_toEndOf="@id/btn_share"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                app:srcCompat="@drawable/icon_location_details" />
+
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/location"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_caption"
+                app:layout_constraintEnd_toEndOf="@id/btn_location"
+                app:layout_constraintStart_toStartOf="@id/btn_location"
+                app:layout_constraintTop_toBottomOf="@+id/btn_location" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_favourite"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:background="@drawable/chk_favourite_selector"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="true"
+                android:contentDescription="@string/content_description"
+                android:focusable="true"
+                android:padding="@dimen/padding_2"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@id/btn_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_location"
+                app:layout_constraintTop_toTopOf="@id/btn_location"
+                app:srcCompat="@drawable/icon_star_empty" />
+
+            <TextView
+                android:id="@+id/txt_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/favourite"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_caption"
+                app:layout_constraintEnd_toEndOf="@id/btn_favourite"
+                app:layout_constraintStart_toStartOf="@id/btn_favourite"
+                app:layout_constraintTop_toBottomOf="@+id/btn_favourite" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_images"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/img_size_xxxlarge"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_share" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/mPageIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_5"
+                app:layout_constraintBottom_toBottomOf="@+id/vp_images"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:piv_animationType="swap"
+                app:piv_dynamicCount="false"
+                app:piv_interactiveAnimation="true"
+                app:piv_padding="5dp"
+                app:piv_radius="5dp"
+                app:piv_selectedColor="@color/white"
+                app:piv_unselectedColor="@color/semi_gray"
+                app:piv_viewPager="@id/vp_images" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_amenities"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mPageIndicatorView">
+
+                <LinearLayout
+                    android:id="@+id/ln_amenitiesShower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/btn_amenitiesShower"
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:contentDescription="@string/content_description"
+                        android:padding="@dimen/padding_2"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintEnd_toEndOf="@id/txt_amenitiesShower"
+                        app:layout_constraintStart_toStartOf="@id/txt_amenitiesShower"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/icon_shower" />
+
+                    <TextView
+                        android:id="@+id/txt_amenitiesShower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:gravity="center"
+                        android:text="أماكن استحمام"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/txt_caption"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_amenitiesWC"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_amenitiesShower" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_amenitiesWC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/btn_amenitiesWC"
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:contentDescription="@string/content_description"
+                        android:padding="@dimen/padding_2"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_amenitiesShower"
+                        app:layout_constraintEnd_toEndOf="@id/txt_amenitiesWC"
+                        app:layout_constraintStart_toStartOf="@id/txt_amenitiesWC"
+                        app:layout_constraintTop_toTopOf="@+id/btn_amenitiesShower"
+                        app:srcCompat="@drawable/icon_wc" />
+
+                    <TextView
+                        android:id="@+id/txt_amenitiesWC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="دورات مياه"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/txt_caption"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_amenitiesShower"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_amenitiesGrass"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/txt_amenitiesShower"
+                        app:layout_constraintTop_toTopOf="@+id/txt_amenitiesShower" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_amenitiesGrass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/btn_amenitiesGrass"
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:contentDescription="@string/content_description"
+                        android:padding="@dimen/padding_2"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_amenitiesShower"
+                        app:layout_constraintEnd_toEndOf="@id/txt_amenitiesGrass"
+                        app:layout_constraintStart_toStartOf="@id/txt_amenitiesGrass"
+                        app:layout_constraintTop_toTopOf="@+id/btn_amenitiesShower"
+                        app:srcCompat="@drawable/icon_grass" />
+
+                    <TextView
+                        android:id="@+id/txt_amenitiesGrass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="أرضية عشبية"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/txt_caption"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_amenitiesShower"
+                        app:layout_constraintEnd_toStartOf="@id/txt_amenitiesWater"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@id/txt_amenitiesWC"
+                        app:layout_constraintTop_toTopOf="@+id/txt_amenitiesShower" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_amenitiesWater"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/btn_amenitiesWater"
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:contentDescription="@string/content_description"
+                        android:padding="@dimen/padding_2"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_amenitiesShower"
+                        app:layout_constraintEnd_toEndOf="@id/txt_amenitiesWater"
+                        app:layout_constraintStart_toStartOf="@id/txt_amenitiesWater"
+                        app:layout_constraintTop_toTopOf="@+id/btn_amenitiesShower"
+                        app:srcCompat="@drawable/icon_water_bottle" />
+
+                    <TextView
+                        android:id="@+id/txt_amenitiesWater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ماء شرب"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/txt_caption"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_amenitiesShower"
+                        app:layout_constraintEnd_toStartOf="@id/txt_amenitiesBall"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@id/txt_amenitiesGrass"
+                        app:layout_constraintTop_toTopOf="@+id/txt_amenitiesShower" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_amenitiesBall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/btn_amenitiesBall"
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:contentDescription="@string/content_description"
+                        android:padding="@dimen/padding_2"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_amenitiesShower"
+                        app:layout_constraintEnd_toEndOf="@id/txt_amenitiesBall"
+                        app:layout_constraintStart_toStartOf="@id/txt_amenitiesBall"
+                        app:layout_constraintTop_toTopOf="@+id/btn_amenitiesShower"
+                        app:srcCompat="@drawable/icon_ball" />
+
+                    <TextView
+                        android:id="@+id/txt_amenitiesBall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="كرة"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/txt_caption"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_amenitiesShower"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@id/txt_amenitiesWater"
+                        app:layout_constraintTop_toTopOf="@+id/txt_amenitiesShower" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_age"
+                style="@style/SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center"
+                android:text="@string/title_age_select"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/txt_subheading"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_amenities" />
+            <!-- android:visibility="gone"-->
+            <LinearLayout
+                android:id="@+id/ln_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_age">
+
+                <LinearLayout
+                    android:id="@+id/ln_young"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content">
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/cpb_young"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cpb_background_progressbar_color="@color/light_gray"
+                            app:cpb_background_progressbar_width="10dp"
+                            app:cpb_progress="0"
+                            app:cpb_progressbar_color="#4caf54"
+                            app:cpb_progressbar_width="10dp" />
+
+                        <TextView
+                            android:id="@+id/total_young"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="?selectableItemBackgroundBorderless"
+
+                            android:gravity="center" />
+                    </FrameLayout>
+
+                    <CheckBox
+                        android:id="@+id/chk_young"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 - 12"
+                        android:buttonTint="@color/black"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                      />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_middle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content">
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/cpb_middle"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cpb_background_progressbar_color="@color/light_gray"
+                            app:cpb_background_progressbar_width="10dp"
+                            app:cpb_progress="0"
+                            app:cpb_progressbar_color="#4caf54"
+                            app:cpb_progressbar_width="10dp" />
+
+                        <TextView
+                            android:id="@+id/total_middle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+
+                            android:layout_gravity="center"
+                            android:gravity="center" />
+                    </FrameLayout>
+
+                    <CheckBox
+                        android:id="@+id/chk_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13 - 17"
+android:buttonTint="@color/black"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_old"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content">
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/cpb_old"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cpb_background_progressbar_color="@color/light_gray"
+                            app:cpb_background_progressbar_width="10dp"
+                            app:cpb_progress="0"
+                            app:cpb_progressbar_color="#4caf54"
+                            app:cpb_progressbar_width="10dp" />
+
+                        <TextView
+                            android:id="@+id/total_old"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+
+                            android:layout_gravity="center"
+                            android:gravity="center" />
+                    </FrameLayout>
+
+                    <CheckBox
+                        android:id="@+id/chk_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18+"
+                        android:buttonTint="@color/black"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                     />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_sep1"
+                style="@style/Separator_Horizontal"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_age" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:baselineAligned="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sep1">
+
+                <LinearLayout
+                    android:id="@+id/ln_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10"
+                    app:layout_constraintBottom_toBottomOf="@id/ln_peopleNumber"
+                    app:layout_constraintEnd_toStartOf="@id/ln_peopleNumber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ln_peopleNumber">
+
+                    <TextView
+                        style="@style/SemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/title_duration"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/txt_title" />
+
+                    <TextView
+                        android:id="@+id/txt_duration"
+                        style="@style/SemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/txt_subheading" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_peopleNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sep1">
+
+                    <TextView
+                        style="@style/SemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/title_invitees_select"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/txt_title" />
+
+                    <TextView
+                        android:id="@+id/txt_peopleNumber"
+                        style="@style/SemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/title_invitees_select"
+                        android:textSize="@dimen/txt_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10"
+                    app:layout_constraintBottom_toBottomOf="@id/ln_peopleNumber"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ln_peopleNumber"
+                    app:layout_constraintTop_toTopOf="@id/ln_peopleNumber">
+
+                    <TextView
+                        style="@style/SemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/title_size"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/txt_title" />
+
+                    <TextView
+                        android:id="@+id/txt_size"
+                        style="@style/SemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/txt_subheading" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_sep2"
+                style="@style/Separator_Horizontal"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginEnd="@dimen/margin_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_details" />
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_calendar"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/padding_5"
+                android:scaleType="fitCenter"
+                android:tint="@color/semi_gray"
+                app:layout_constraintEnd_toStartOf="@id/txt_datetime"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sep2"
+                app:srcCompat="@drawable/icon_calendar" />
+
+            <TextView
+                android:id="@+id/txt_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_datetime_select"
+                android:textSize="@dimen/txt_default"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_calendar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_calendar" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_datetime" />
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/pBar_times"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:elevation="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_days"
+                app:shimmer_duration="700">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+>
+                <include layout="@layout/shammer_lodaing_time"></include>
+            </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_times"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_days" />
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_calendarIndividual"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/padding_5"
+                android:scaleType="fitCenter"
+                android:tint="@color/semi_gray"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@id/btn_timeIndividual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_times"
+                app:srcCompat="@drawable/icon_calendar" />
+
+
+
+            <TextView
+                android:id="@+id/txt_dateIndividual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/txt_subheading"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/btn_calendarIndividual"
+                app:layout_constraintStart_toStartOf="@id/btn_calendarIndividual"
+                app:layout_constraintTop_toBottomOf="@+id/btn_calendarIndividual" />
+            <TextView
+                android:id="@+id/txt_Owner_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/owner_info"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textColor="@color/dark_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_dateIndividual" />
+
+            <TextView
+                android:id="@+id/txt_name_Owner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/owner"
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_Owner_info" />
+            <TextView
+                android:id="@+id/txt_guard_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/guard_info"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textColor="@color/dark_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_name_Owner" />
+
+            <TextView
+                android:id="@+id/txt_name_guard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/owner"
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_guard_info" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_timeIndividual"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/padding_5"
+                android:scaleType="fitCenter"
+                android:tint="@color/semi_gray"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_calendarIndividual"
+                app:layout_constraintTop_toTopOf="@+id/btn_calendarIndividual"
+                app:srcCompat="@drawable/icon_clock" />
+
+            <TextView
+                android:id="@+id/txt_timeIndividual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/txt_subheading"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/btn_timeIndividual"
+                app:layout_constraintStart_toStartOf="@id/btn_timeIndividual"
+                app:layout_constraintTop_toBottomOf="@+id/btn_timeIndividual" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <include
+        android:id="@+id/nsc_summary"
+        layout="@layout/layout_summary"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/ln_result"
+        layout="@layout/layout_result"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_10"
+        android:text="@string/continuee"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_title"
+        android:visibility="gone" />
+
+</RelativeLayout>

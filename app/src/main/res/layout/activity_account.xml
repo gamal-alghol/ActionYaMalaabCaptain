@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.account.AccountActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ln_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/drawer_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/padding_15"
+        android:paddingStart="@dimen/padding_15"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="108dp"
+            android:layout_height="@dimen/img_size_xlarge"
+            app:civ_border_color="#56ffffff"
+            app:civ_border_width="10dp" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            style="@style/Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title" />
+
+        <TextView
+            android:id="@+id/txt_userid"
+            style="@style/SemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/userid"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading" />
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:padding="@dimen/padding_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+        <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLayout
+            android:id="@+id/mCircleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:firstChildPosition="South"
+            app:isRotating="true"
+            app:rotateToCenter="true"
+            app:speed="75">
+
+            <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout
+                android:id="@+id/clv_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tint="@color/gray"
+                app:liv_name="@string/settings">
+
+                <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleImageView
+                    android:id="@+id/civ_settings"
+                    android:layout_width="@dimen/img_size_small"
+                    android:layout_height="@dimen/img_size_small"
+                    android:tint="@color/gray"
+                    app:srcCompat="@drawable/icon_settings" />
+
+                <TextView
+                    android:id="@+id/txt_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/settings"
+                    android:textColor="@color/gray" />
+
+            </com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout>
+
+
+            <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout
+                android:id="@+id/clv_bookings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tint="@color/gray"
+                app:liv_name="@string/settings">
+
+                <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleImageView
+                    android:id="@+id/civ_calendar"
+                    android:layout_width="@dimen/img_size_small"
+                    android:layout_height="@dimen/img_size_small"
+                    android:tint="@color/gray"
+                    app:srcCompat="@drawable/icon_calendar" />
+
+                <TextView
+                    android:id="@+id/txt_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/title_my_bookings"
+                    android:textColor="@color/gray" />
+
+            </com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout>
+
+
+            <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout
+                android:id="@+id/clv_rewards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tint="@color/gray"
+                app:liv_name="@string/settings">
+
+                <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleImageView
+                    android:id="@+id/civ_rewards"
+                    android:layout_width="@dimen/img_size_small"
+                    android:layout_height="@dimen/img_size_small"
+                    android:tint="@color/gray"
+                    app:srcCompat="@drawable/icon_rewards" />
+
+                <TextView
+                    android:id="@+id/txt_rewards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/title_my_rewards"
+                    android:textColor="@color/gray" />
+
+            </com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout>
+
+
+            <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout
+                android:id="@+id/clv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tint="@color/gray"
+                app:liv_name="@string/settings">
+
+                <com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleImageView
+                    android:id="@+id/civ_profile"
+                    android:layout_width="@dimen/img_size_small"
+                    android:layout_height="@dimen/img_size_small"
+                    android:tint="@color/gray"
+                    app:srcCompat="@drawable/icon_profile" />
+
+                <TextView
+                    android:id="@+id/txt_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="@string/title_my_profile"
+                    android:textColor="@color/gray" />
+
+            </com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLinearLayout>
+
+
+        </com.malaab.ya.action.actionyamalaab.custom.circuclar_menu.CircleLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/img_size_large"
+            android:layout_height="@dimen/img_size_large"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_10"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="4dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

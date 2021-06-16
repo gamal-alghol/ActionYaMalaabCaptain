@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_container"
+    android:layout_width="@dimen/list_item_small"
+    android:layout_height="@dimen/list_item_medium_s"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_timeName"
+        style="@style/SemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Time"
+        android:textColor="@color/black_effective"
+        android:textSize="@dimen/txt_caption" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_isSelected"
+        android:layout_below="@+id/txt_timeName"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/padding_5"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorAccent"
+        app:srcCompat="@drawable/icon_football_field_new" />
+
+    <TextView
+        android:id="@+id/txt_isSelected"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/black_effective"
+        android:visibility="invisible" />
+
+</RelativeLayout>

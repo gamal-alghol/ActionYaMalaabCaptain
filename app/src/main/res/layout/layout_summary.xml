@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/btn_continue"
+    android:background="@drawable/gradient_primary_color"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/summary_lbl_title"
+            style="@style/Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:text="@string/summary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_headline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_date"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/date"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_title" />
+
+        <TextView
+            android:id="@+id/summary_txt_date"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_date"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_date"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_date" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_timeStart"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/time_start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toStartOf="@id/summary_lbl_timeEnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_date" />
+
+        <TextView
+            android:id="@+id/summary_txt_timeStart"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_timeStart"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_timeStart"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_timeStart" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_timeEnd"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/time_end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintBottom_toBottomOf="@+id/summary_lbl_timeStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/summary_lbl_timeStart"
+            app:layout_constraintTop_toTopOf="@+id/summary_lbl_timeStart" />
+
+        <TextView
+            android:id="@+id/summary_txt_timeEnd"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_timeEnd"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_timeEnd"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_timeEnd" />
+
+
+        <TextView
+            android:id="@+id/summary_txt_sep1"
+            style="@style/Separator_Horizontal"
+            android:layout_margin="@dimen/margin_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_timeStart" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_type"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_sep1" />
+
+        <TextView
+            android:id="@+id/summary_txt_type"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_type"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_type"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_type" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_ageRange"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/age"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toStartOf="@id/summary_lbl_playersNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_type" />
+
+        <TextView
+            android:id="@+id/summary_txt_ageRange"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_ageRange"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_ageRange"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_ageRange" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_playersNumber"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/title_invitees_select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintBottom_toBottomOf="@+id/summary_lbl_ageRange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/summary_lbl_ageRange"
+            app:layout_constraintTop_toTopOf="@+id/summary_lbl_ageRange" />
+
+        <TextView
+            android:id="@+id/summary_txt_playersNumber"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_playersNumber"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_playersNumber"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_playersNumber" />
+
+
+        <TextView
+            android:id="@+id/summary_txt_sep2"
+            style="@style/Separator_Horizontal"
+            android:layout_margin="@dimen/margin_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_playersNumber" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_price"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/title_price"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_sep2" />
+
+        <TextView
+            android:id="@+id/summary_txt_price"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_price"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_price"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_price" />
+
+
+        <TextView
+            android:id="@+id/summary_txt_sep3"
+            style="@style/Separator_Horizontal"
+            android:layout_margin="@dimen/margin_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_price" />
+
+
+        <TextView
+            android:id="@+id/summary_lbl_paymentMethod"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/payment_method"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_sep3" />
+
+        <TextView
+            android:id="@+id/summary_txt_paymentMethod"
+            style="@style/SemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/summary_lbl_paymentMethod"
+            app:layout_constraintStart_toStartOf="@id/summary_lbl_paymentMethod"
+            app:layout_constraintTop_toBottomOf="@+id/summary_lbl_paymentMethod" />
+
+
+        <Button
+            android:id="@+id/summary_btn_bookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/btn_rounded_standard"
+            android:paddingEnd="@dimen/padding_25"
+            android:paddingStart="@dimen/padding_25"
+            android:text="@string/book_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_txt_paymentMethod" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

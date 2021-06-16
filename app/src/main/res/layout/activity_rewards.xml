@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.account.rewards.RewardsActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lbl_title"
+        style="@style/Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_25"
+        android:layout_marginStart="@dimen/margin_25"
+        android:gravity="center"
+        android:padding="@dimen/padding_5"
+        android:text="@string/msg_no_rewards"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/lbl_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_5"
+        android:text="@string/msg_no_rewards_description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_subheading"
+        app:layout_constraintEnd_toEndOf="@id/lbl_title"
+        app:layout_constraintStart_toStartOf="@id/lbl_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_title" />
+
+</android.support.constraint.ConstraintLayout>

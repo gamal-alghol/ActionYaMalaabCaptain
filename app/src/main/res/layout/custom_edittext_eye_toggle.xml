@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_edtEyeToggle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/mEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/mButtonToggle"
+        android:drawablePadding="@dimen/padding_15"
+        android:drawableStart="@drawable/icon_password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="@dimen/padding_15"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_default"
+        android:theme="@style/EditText" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/mButtonToggle"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/content_description"
+        android:scaleType="center"
+        android:tint="@color/translucent_white"
+        android:visibility="gone"
+        app:srcCompat="@drawable/icon_eye_open" />
+
+</RelativeLayout>

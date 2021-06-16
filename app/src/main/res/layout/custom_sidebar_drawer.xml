@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/constraintLayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/drawer_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <FrameLayout
+                android:id="@+id/fr_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/img_profile"
+                app:layout_constraintEnd_toStartOf="@id/img_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/img_profile">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_messages"
+                    android:layout_width="@dimen/img_size"
+                    android:layout_height="@dimen/img_size"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/padding_10"
+                    app:civ_border_color="#56ffffff"
+                    app:civ_border_width="0dp" />
+
+                <com.malaab.ya.action.actionyamalaab.custom.CircularTextView
+                    android:id="@+id/txt_messagesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_caption"
+                    android:visibility="gone"
+                    app:cSolidColor="@color/red"
+                    app:cStrokeColor="@color/white"
+                    app:cStrokeWidth="0" />
+            </FrameLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/img_size_large"
+                android:layout_height="@dimen/img_size_large"
+                app:civ_border_color="#56ffffff"
+                app:civ_border_width="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/fr_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/img_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_profile"
+                app:layout_constraintTop_toTopOf="@id/img_profile">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_notifications"
+                    android:layout_width="@dimen/img_size"
+                    android:layout_height="@dimen/img_size"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/padding_10"
+                    app:civ_border_color="#56ffffff"
+                    app:civ_border_width="0dp" />
+
+                <com.malaab.ya.action.actionyamalaab.custom.CircularTextView
+                    android:id="@+id/txt_notificationsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_caption"
+                    android:visibility="gone"
+                    app:cSolidColor="@color/red"
+                    app:cStrokeColor="@color/white"
+                    app:cStrokeWidth="0" />
+            </FrameLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txt_username"
+            style="@style/SemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cl_profile"
+            android:layout_marginTop="@dimen/margin_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/padding_2"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_userid"
+            style="@style/SemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_username"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/userid"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            android:visibility="gone" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="@dimen/cv_elevation_large"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="@dimen/padding_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_5">
+
+                <TextView
+                    style="@style/SemiBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_1"
+                    android:text="@string/welcome"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/txt_subheading" />
+
+                <TextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_1"
+                    android:text="@string/login_to_account"
+                    android:textSize="@dimen/txt_default" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3515732" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/padding_15"
+        app:layout_constraintBottom_toTopOf="@+id/ln_logout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+
+    <LinearLayout
+        android:id="@+id/ln_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/log_out"
+            android:textSize="@dimen/txt_subheading"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_region"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@null"
+            android:clickable="false"
+            android:contentDescription="@string/content_description"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:tint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_news"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_logout" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

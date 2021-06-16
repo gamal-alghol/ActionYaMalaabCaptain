@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- To have default theme for all EditTexts -->
+        <!--<item name="android:editTextStyle">@style/EditText_NoBottomLine</item>-->
+        <!--<item name="editTextStyle">@style/EditText_NoBottomLine</item>-->
+    </style>
+
+    <!-- Cold Start -->
+    <style name="AppTheme.ColdStartTheme" parent="AppTheme">
+    <!--      <item name="android:windowBackground">@drawable/cold_start</item> -->
+         <item name="android:windowTranslucentStatus">true</item>
+         <item name="android:windowTranslucentNavigation">true</item>
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+     </style>
+
+     <!-- EditText-->
+    <style name="EditText" parent="android:Widget.EditText">
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="colorAccent">@android:color/transparent</item>          <!-- Bar/Bubble under cursor -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="EditText_NoBottomLine" parent="android:Widget.EditText">
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="colorAccent">@android:color/transparent</item>          <!-- Bar/Bubble under cursor -->
+        <item name="android:background">@null</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Text Style -->
+    <style name="Bold">
+        <item name="fontPath">fonts/open-sans/OpenSans-Bold.ttf</item>
+    </style>
+
+    <style name="SemiBold">
+        <item name="fontPath">fonts/open-sans/OpenSans-SemiBold.ttf</item>
+    </style>
+
+
+    <!-- Separator Style -->
+    <style name="Separator_Horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0.7dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_10</item>
+        <item name="android:background">@color/gray_transparent</item>
+    </style>
+
+    <style name="Separator_Horizontal_No_Margin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0.7dp</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="Separator_Vertical">
+        <item name="android:layout_width">0.7dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_10</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="Separator_Vertical_No_Margin">
+        <item name="android:layout_width">0.7dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+
+</resources>

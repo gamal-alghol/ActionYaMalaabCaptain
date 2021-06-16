@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jackandphantom.android:blurimage:1.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/1505ae0a999d66d2224f9d9a89bb0dcb/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/1505ae0a999d66d2224f9d9a89bb0dcb/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/1505ae0a999d66d2224f9d9a89bb0dcb/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/modules-2/files-2.1/com.jackandphantom.android/blurimage/1.2.0/4066e4eca4ccf8976e31ccf005d9f8ae2c945b34/blurimage-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

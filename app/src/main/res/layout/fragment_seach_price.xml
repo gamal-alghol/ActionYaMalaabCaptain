@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.malaab.ya.action.actionyamalaab.custom.FlingableNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nsc_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xlight_gray"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_rangeBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_header">
+
+        <TextView
+            android:id="@+id/txt_desc"
+            style="@style/Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:text="@string/title_budget_select"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.appyvet.materialrangebar.RangeBar
+            android:id="@+id/mRangeBar_price"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/rangebar_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_desc"
+            app:mrb_connectingLineColor="@color/colorPrimary"
+            app:mrb_pinColor="@color/colorPrimary"
+            app:mrb_pinMaxFont="12sp"
+            app:mrb_pinMinFont="10sp"
+            app:mrb_pinTextColor="@color/white"
+            app:mrb_rangeBarPaddingBottom="@dimen/padding_10"
+            app:mrb_selectorColor="@color/colorPrimary"
+            app:mrb_selectorSize="10dp"
+            app:mrb_tickColor="@color/transparent"
+            app:mrb_tickEnd="1000"
+            app:mrb_tickInterval="1"
+            app:mrb_tickStart="0" />
+
+        <TextView
+            android:id="@+id/txt_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/data_zero"
+            app:layout_constraintStart_toStartOf="@id/mRangeBar_price"
+            app:layout_constraintTop_toBottomOf="@+id/mRangeBar_price" />
+
+        <TextView
+            android:id="@+id/txt_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:gravity="center"
+            android:padding="@dimen/padding_2"
+            android:text="@string/data_zero"
+            app:layout_constraintEnd_toEndOf="@id/mRangeBar_price"
+            app:layout_constraintTop_toBottomOf="@+id/mRangeBar_price" />
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_25"
+            android:background="@drawable/btn_rounded_green"
+            android:padding="@dimen/padding_10"
+            android:text="@string/title_search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_min" />
+
+    </android.support.constraint.ConstraintLayout>
+</com.malaab.ya.action.actionyamalaab.custom.FlingableNestedScrollView>
+

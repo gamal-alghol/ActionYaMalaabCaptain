@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ln_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?selectableItemBackgroundBorderless"
+              android:clickable="true"
+              android:focusable="true"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_margin="@dimen/margin_5"
+            android:tint="@color/gray"
+            android:contentDescription="@string/content_description"/>
+
+        <com.malaab.ya.action.actionyamalaab.custom.CircularTextView
+            android:id="@+id/txt_notificationCounter"
+            android:layout_width="@dimen/icon_size_small"
+            android:layout_height="@dimen/icon_size_small"
+            android:layout_gravity="end|top"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_caption"
+            android:visibility="visible"
+            app:cSolidColor="@color/red"
+            app:cStrokeColor="@color/colorPrimary"
+            app:cStrokeWidth="0"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_address"
+            app:layout_constraintLeft_toRightOf="@+id/lbl_address"
+            app:layout_constraintTop_toTopOf="@+id/lbl_address"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center"
+        android:padding="@dimen/padding_2"
+        android:textSize="@dimen/txt_subheading"
+        android:textStyle="bold"/>
+
+</LinearLayout>

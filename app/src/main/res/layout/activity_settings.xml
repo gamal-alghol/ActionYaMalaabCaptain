@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.account.settings.SettingsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/lbl_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_25"
+            android:padding="@dimen/padding_10"
+            android:text="@string/title_app_language"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <LinearLayout
+            android:id="@+id/ln_lng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:layout_marginStart="@dimen/margin_25"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_language">
+
+            <TextView
+                android:id="@+id/txt_language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="@dimen/padding_10"
+                android:text="@string/title_app_language"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_title" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/padding_10"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/header_btn_notifications"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_arrow_down" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lbl_notification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_25"
+            android:padding="@dimen/padding_10"
+            android:text="@string/title_notifications"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_title"
+            app:layout_constraintStart_toStartOf="@id/ln_lng"
+            app:layout_constraintTop_toBottomOf="@+id/ln_lng" />
+
+        <TextView
+            android:id="@+id/txt_sep1"
+            android:layout_width="0dp"
+            android:layout_height="0.7dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/ln_lng"
+            app:layout_constraintStart_toStartOf="@id/ln_lng"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_notification" />
+
+
+        <Switch
+            android:id="@+id/sw_notifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="start"
+            android:padding="@dimen/padding_15"
+            android:text="@string/title_notifications"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/ln_lng"
+            app:layout_constraintStart_toStartOf="@id/ln_lng"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sep1" />
+
+        <Switch
+            android:id="@+id/sw_offers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="start"
+            android:padding="@dimen/padding_15"
+            android:text="@string/title_offers"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/ln_lng"
+            app:layout_constraintStart_toStartOf="@id/ln_lng"
+            app:layout_constraintTop_toBottomOf="@+id/sw_notifications" />
+
+        <Switch
+            android:id="@+id/sw_messages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="start"
+            android:padding="@dimen/padding_15"
+            android:text="@string/title_messages"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="@id/ln_lng"
+            app:layout_constraintStart_toStartOf="@id/ln_lng"
+            app:layout_constraintTop_toBottomOf="@+id/sw_offers" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

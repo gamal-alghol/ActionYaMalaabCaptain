@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yayandroid:TheActivityManager:1.0.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/7965372f653fb01a12862e80a05d124c/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/7965372f653fb01a12862e80a05d124c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/gradle-6.1.1/caches/transforms-2/files-2.1/7965372f653fb01a12862e80a05d124c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/gradle-6.1.1/caches/modules-2/files-2.1/com.yayandroid/TheActivityManager/1.0.6/26074ce0aa7ef211eec600901b12f5d4f12ece1f/TheActivityManager-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

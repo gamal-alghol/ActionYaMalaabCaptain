@@ -1,0 +1,304 @@
+<resources>
+    <string name="app_name">أكشن ياملعب</string>
+
+    <!--play store-->
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+
+    <string name="google_maps_key">AIzaSyB-qiVqhwPV7RnMylFDRstycrTpo-sSCe4</string>
+
+    <string name="title_favourite">Favourite</string>
+    <string name="title_map">Near by Fields</string>
+    <string name="title_change_location">Change Your Location</string>
+    <string name="title_aboutus">About Us</string>
+    <string name="title_contactus">Contact Us</string>
+    <string name="title_terms_conditions">Terms &amp; Conditions</string>
+    <string name="title_my_profile">My Profile</string>
+    <string name="title_my_rewards">My Rewards</string>
+    <string name="title_my_bookings">My Bookings</string>
+    <string name="title_search">Search</string>
+    <string name="title_price">Price</string>
+    <string name="title_region">Region</string>
+    <string name="title_playground_size">Playground Size</string>
+    <string name="title_image_source">Select Image Source</string>
+    <string name="title_datetime_select">Select Date|Time</string>
+    <string name="title_budget_select">Set your budget</string>
+    <string name="title_region_select">Select Region</string>
+    <string name="title_city_select">Select City</string>
+    <string name="title_direction_select">Select Direction</string>
+    <string name="title_age_select">Select Age Range</string>
+    <string name="title_size_select">Select Playground Size</string>
+    <string name="title_duration_select">Select Duration</string>
+    <string name="title_invitees_select">Follower Number</string>
+    <string name="title_duration">Duration</string>
+    <string name="title_size">Size</string>
+    <string name="title_app_language">App Language</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_offers">Offers</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_management">Management</string>
+
+
+    <string name="version">App Version</string>
+    <string name="title">Title</string>
+
+    <string name="username">Username</string>
+    <string name="userid">User Unique Id</string>
+    <string name="password">Password</string>
+    <string name="verification_code">Activation Code</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="fName">First Name</string>
+    <string name="lName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="dob">Date of birth</string>
+    <string name="contacts">Contacts</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="age">Age</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="address">Address</string>
+    <string name="my_address">My Address</string>
+    <string name="address_1">Address 1</string>
+    <string name="address_2">Address 2</string>
+    <string name="city">City</string>
+    <string name="direction">Direction</string>
+    <string name="postal_code">Postal code</string>
+    <string name="state">State</string>
+    <string name="status">Status</string>
+    <string name="country">Country</string>
+    <string name="price">SAR: %.0f %s</string>
+    <string name="size">%d x %d</string>
+    <string name="message">Message</string>
+    <string name="language">Language</string>
+    <string name="playground_name">Field Name: %s</string>
+    <string name="show">Show</string>
+
+    <string name="share">Share</string>
+    <string name="location">Location</string>
+    <string name="favourite">Add to Favourite</string>
+
+    <string name="ball">Ball</string>
+    <string name="water">Water</string>
+    <string name="grass">Grass</string>
+    <string name="wc">WC</string>
+    <string name="shower">Shower</string>
+
+    <string name="rewards">Rewards</string>
+    <string name="bookings">Bookings</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+
+    <string name="request_verification_code">Request Activation Code</string>
+    <string name="verify">Verify</string>
+
+    <string name="register">Register</string>
+
+    <string name="content_description">loading…</string>
+
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="login_to_account">Log in to your account here</string>
+    <string name="login_by_phone">Login by phone number</string>
+
+    <string name="individual">Exercises</string>
+    <string name="full">Playgrounds</string>
+
+    <string name="upcoming_bookings">Upcoming</string>
+    <string name="past_bookings">Past</string>
+    <string name="fines">Fines</string>
+
+    <string name="summary">Summary</string>
+    <string name="date">Date</string>
+    <string name="time">Time: %s - %s</string>
+    <string name="time_start">Time Start</string>
+    <string name="time_end">Time End</string>
+    <string name="type">Type</string>
+    <string name="players">Players</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="payment_cash">Cash on arrival</string>
+
+    <string name="data_zero">0</string>
+
+    <string name="status_pending">Pending</string>
+    <string name="status_approved">Approved</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_cancelled">Cancelled</string>
+
+    <string name="no_player">0 Player</string>
+    <string name="one_player">1 Player</string>
+    <string name="two_player">2 Player</string>
+    <string name="three_player">3 Player</string>
+    <string name="four_player">4 Player</string>
+    <string name="five_player">5 Player</string>
+    <string name="fine_amount">SAR %.0f</string>
+    <string name="fine_type">Fine Type: </string>
+    <string name="fine_payment">Not Paid</string>
+    <string name="fine_attendance">Not Attended</string>
+
+    <string name="fine_status_paid">paid</string>
+    <string name="fine_status_not_paid">not paid</string>
+
+    <string name="booking_type_no_format">Booking Type: %s</string>
+    <string name="playground_name_no_format">Field Name: </string>
+    <string name="time_no_format">Time: </string>
+    <string name="date_no_format">Date: </string>
+    <string name="amount_no_format">Amount: </string>
+    <string name="status_no_format">Status: </string>
+
+    <!-- BUTTONS -->
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="log_out">Logout</string>
+    <string name="login_here">Login Here</string>
+    <string name="forgot_password">Forgot?</string>
+    <string name="skip">Skip</string>
+    <string name="arabic">عربي</string>
+    <string name="update">Update</string>
+    <string name="join">Join</string>
+    <string name="continuee">Continue</string>
+    <string name="book_now">Book Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_join">Cancel Joining</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- DESCRIPTIONS -->
+    <string name="app_name_en">Action Ya Malab</string>
+    <string name="features">Features</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_us_email">actionyamalab@gmail.com</string>
+    <string name="contact_us_twitter">\@actionyamalab</string>
+    <string name="contact_us_phone">00966501940080</string>
+    <string name="designed_by">Designed BY</string>
+    <string name="aboutus_about">Action Ya Malab is a mobile app that saves your time of searching for best soccer fields to play soccer with your friends and make new friends too into a new soccer social network concept in Saudi Arabia.</string>
+    <string name="aboutus_point1">Book your chosen soccer field at any time and date</string>
+    <string name="aboutus_point2">Find the nearest soccer field based on your current location</string>
+    <string name="aboutus_point3">Various options of choosing your soccer field such as searching by day, time, and size.</string>
+    <string name="aboutus_point4">Availability of viewing your upcoming, previous, and rejected bookings smoothly.</string>
+    <string name="aboutus_point5">Individual booking which allows the captain to book and play with other captains based on his age which this app provide three types of age categories the captain can choose from and play with.</string>
+    <string name="aboutus_point6">Fines: Failure to appear after confirming your reservation to view the full amount or suspend your account</string>
+
+    <string name="terms_point1">Payment: the payment must be made on arrival at the field and make sure to be registered by the field\'s owner via field management app so that to avoid any fines added to your account.</string>
+    <string name="terms_point2">Booking and Cancellation: in case you choose full booking type then we will call you to confirm your booking and you can cancel your booking before 2 hour of your booking time. On the other side, in case you choose individual booking type then you can ultimately choose one of three age categories based on your age, also you may book in different fields at the same time however once one of your booking is confirmed then all your remaining bookings will be deleted.</string>
+    <string name="terms_point3">Fines: If you didn\'t attend at the specific time of your booking or didn\'t pay to the owner\'s field then a fine will be added to your account and may block your account in further.</string>
+    <string name="terms_point4">Modification : Action Ya Malab management has the full rights to change its policies at any time and a notification will be sent to all users for that.</string>
+
+    <string name="dialog_booking_cancel_title">Cancel booking!</string>
+    <string name="dialog_booking_cancel_msg">Are you sure you want to cancel this booking?</string>
+
+    <string name="dialog_booking_fine_title">Cancellation Fine!</string>
+    <string name="dialog_booking_fine_msg">Dear Captain, canceling the booking now will cause in a fine in your account due to the near time of the match which will start in less than an hour!</string>
+
+    <!-- MESSAGES -->
+    <string name="msg_user_not_login">Authentication failed, kindly try to login again!</string>
+    <string name="msg_user_need_login">Please login and enjoy using this feature!</string>
+    <string name="msg_no_account">Don\'t have an account? Register Now!</string>
+    <string name="msg_have_account">Already have an account?</string>
+    <string name="msg_exit">Please click BACK again to exit</string>
+    <string name="msg_success">Your changes have been successfully saved</string>
+    <string name="msg_day_select">Select another day!</string>
+    <string name="msg_age_select">Select to which age category you belong!</string>
+    <string name="msg_no_day_select">Please select a day first!</string>
+    <string name="msg_no_time_select">Please select time first!</string>
+    <string name="msg_user_same_booking">You participated in this booking already!</string>
+    <string name="msg_user_same_booking_cancel">You participated in this booking already! Cancel it?</string>
+    <string name="msg_players_number_exceed">Sorry, you can only invite %d player as maximum!</string>
+    <string name="msg_individual_booking_closed">This booking has been closed due to completion of players joined</string>
+    <string name="msg_individual_booking_closed_confirmed">This booking has been closed due to confirmation on one category</string>
+    <string name="msg_individual_booking_completed">The individual booking for %s on field %s has been completed</string>
+    <string name="msg_booking_success_individual">Your reservation request has been successfully completed, Captain. You will be notified when the number of players has been completed and your reservation has been confirmed</string>
+    <string name="msg_booking_success">Your booking request is successfully completed and a notification will be sent to you when it\'s confirmed!</string>
+    <string name="msg_booking_individual_success">Your joining request is successfully completed and a notification will be sent to you when it\'s completed!</string>
+    <string name="msg_booking_individual_cancel_success">Your request is successfully completed!</string>
+    <string name="msg_gps_enable">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="msg_gps_error">Your GPS seems to be disabled, please enable it to use this functionality!</string>
+    <string name="msg_contactus_success">Your message has been sent successfully, we will contact you very soon!</string>
+    <string name="msg_no_rewards">Sorry, You have No Rewards!</string>
+    <string name="msg_no_rewards_description">Start participating and making bookings in order to earn rewards</string>
+    <string name="msg_share_playground_full">Hey, check out this full booking in %s \n %s</string>
+    <string name="msg_share_playground_individual">Hey, join your bodies on this individual booking in %s \n %s</string>
+
+    <!-- HINTS -->
+    <string name="hint_phone_no">Phone Number</string>
+    <string name="hint_search">Search…</string>
+
+
+    <!-- NOTIFICATION -->
+    <string name="notification_new_captain_title">تم تسجيلك بنجاح ياكابتن</string>
+    <string name="notification_new_captain_message">احجز واكشنها</string>
+
+    <string name="BOOKING_ADMIN_APPROVED_title">The reservation has been approved by the reservation officer</string>
+    <string name="BOOKING_ADMIN_APPROVED_message">Play and have fun</string>
+
+    <string name="notification_booking_confirmed">تم نأكيد حجزك ياكابتن</string>
+    <string name="notification_booking_confirmed_message">العب واكشنها</string>
+
+    <string name="notification_booking_rejected">للأسف تم رفض حجزك</string>
+    <string name="notification_booking_rejected_message">تقدر تحجز في وقت ثاني ياكابتن</string>
+    <string name="notification_individual_booking_confirmed">تم تأكيد انضمامك ياكابتن</string>
+
+    <string name="notification_individual_completed_title">تم تأكيد حجزك ياكابتن</string>
+    <string name="notification_individual_completed_message">تم تأكيد حجزك الفردي، العب واكشنها!</string>
+
+    <string name="notification_individual_not_completed_title">لم يتم تأكيد انضمامك</string>
+    <string name="notification_individual_not_completed_message">عذرا، تم تأكيد فئة عمرية ثانية. حاول مع حجوزات اخرى</string>
+
+    <string name="notification_new_playground_title">تم إضافة ملاعب جديدة</string>
+    <string name="notification_new_playground_message">احجز واكشنها</string>
+
+    <string name="notification_new_individual_playground_title">كيف التحديات معاك؟</string>
+    <string name="notification_new_individual_playground_message">احجز فردي واكشنها</string>
+
+    <string name="notification_new_reward">عندك مكافأة جديدة ياكابتن</string>
+
+    <string name="notification_contact_us_title">رسالة جديدة</string>
+    <string name="notification_contact_us_message">لديك رسالة جديدة من ادارة التطبيق!</string>
+
+    <string name="notification_fine_issued_title">غرامة جديدة</string>
+    <string name="notification_fine_issued_message">تم إصدار غرامة بحقك لعدم التزامك بحضور حجزك الاخير</string>
+
+    <string name="notification_block">تم توقيف حسابك</string>
+    <string name="notification_block_message">الرجاء التواصل مع ادارة التطبيق</string>
+    <!-- PERMISSIONS -->
+    <string name="permissions_dialog_title">Permission Needed</string>
+    <string name="permissions_dialog_message">%s app needs permissions that you refused or the system failed to apply for an error, please go to the app settings for manual authorization, otherwise the function can not be used normally!</string>
+    <string name="permissions_dialog_button_positive">OK, open settings</string>
+
+    <!-- Errors -->
+    <string name="error">Something went wrong, please try again!</string>
+    <string name="error_no_data">No data was found!</string>
+
+    <string name="error_email_already_registered">Email address is used by another account</string>
+    <string name="error_phone_no_format">Phone number is not correct, please check your phone number!</string>
+    <string name="error_many_request">An error occurred in requesting a activation code, please try again!</string>
+    <string name="error_verification_code">Activation code is not correct or has expired!</string>
+    <string name="error_user_guest">Please login to get a better result</string>
+    <string name="error_user_inactive">Your account is not active yet, you will be notified very soon!</string>
+    <string name="error_user_owner">Sorry, your account has no permission to use this app!</string>
+    <string name="error_user_not_exist">Sorry, you are not registered yet!</string>
+
+    <string name="error_empty_field">This filed can not be empty!</string>
+    <string name="error_invalid_email">Invalid Email!</string>
+    <string name="error_no_connection">No Internet connection, please go online! </string>
+    <string name="error_timeout">Could not complete your request due to the network, please retry!</string>
+    <string name="error_password_not_matched">Passwords are not matched!</string>
+    <string name="error_forgot_password">User is not exist!</string>
+
+    <string name="error_upload_image_size">Image size must be less than 1 MB</string>
+    <string name="error_share_no_provider">There is no provider for this sharing type!</string>
+    <string name="owner">owner</string>
+    <string name="owner_info">Owner info:</string>
+    <string name="mobile">mobile</string>
+    <string name="guard">guard</string>
+    <string name="guard_info">Guard info</string>
+    <string name="amount_priceIndividual">amount required</string>
+
+</resources>

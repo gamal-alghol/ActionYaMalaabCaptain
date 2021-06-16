@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.loginbyphone.LoginByPhoneActivity">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#39174d03" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:paddingBottom="@dimen/padding_15">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_size_xlarge"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_50"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_logo_white" />
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginTop="@dimen/margin_25"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/img_size_xlarge"
+                android:layout_height="@dimen/img_size_xlarge"
+                android:layout_marginTop="@dimen/margin_25"
+                android:clickable="false"
+                android:visibility="gone"
+                app:civ_border_color="#56ffffff"
+                app:civ_border_width="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_message" />
+
+
+            <!--<com.malaab.ya.action.actionyamalaab.custom.PrefixEditText-->
+            <!--android:id="@+id/edt_phone"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="@dimen/margin_25"-->
+            <!--android:layout_marginStart="@dimen/margin_25"-->
+            <!--android:layout_marginTop="@dimen/margin_10"-->
+            <!--android:drawablePadding="@dimen/padding_15"-->
+            <!--android:hint="@string/hint_phone_no"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:inputType="phone"-->
+            <!--android:lines="1"-->
+            <!--android:padding="@dimen/padding_15"-->
+            <!--android:tag="+966 "-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/txt_default"-->
+            <!--android:theme="@style/EditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/img_profile" />-->
+
+            <com.malaab.ya.action.actionyamalaab.custom.PhoneNumberEdit
+                android:id="@+id/edt_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawablePadding="@dimen/padding_15"
+                android:drawableStart="@drawable/icon_phone"
+                android:gravity="left"
+                android:hint="@string/hint_phone_no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_default"
+                android:theme="@style/EditText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+            <com.malaab.ya.action.actionyamalaab.custom.EditTextWithEyeToggle
+                android:id="@+id/edt_verificationCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_25"
+                android:gravity="start"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:eHint="@string/verification_code"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_phone" />
+
+            <Button
+                android:id="@+id/btn_requestVerificationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/btn_rounded_white_light"
+                android:padding="@dimen/padding_15"
+                android:text="@string/request_verification_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_button"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_verificationCode" />
+
+            <Button
+                android:id="@+id/btn_verify"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/btn_rounded_white_light"
+                android:text="@string/verify"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_button"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_requestVerificationCode" />
+
+            <ProgressBar
+                android:id="@+id/pBar_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_requestVerificationCode" />
+
+            <EditText
+                android:id="@+id/edt_fName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawablePadding="@dimen/padding_15"
+                android:drawableStart="@drawable/icon_user"
+                android:hint="@string/fName"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_default"
+                android:theme="@style/EditText"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_verify" />
+
+            <EditText
+                android:id="@+id/edt_lName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_25"
+                android:drawablePadding="@dimen/padding_15"
+                android:drawableStart="@drawable/icon_user"
+                android:hint="@string/lName"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_default"
+                android:theme="@style/EditText"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_fName" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_25"
+                android:drawablePadding="@dimen/padding_15"
+                android:drawableStart="@drawable/icon_email"
+                android:hint="@string/email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:padding="@dimen/padding_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_default"
+                android:theme="@style/EditText"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_lName" />
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/btn_rounded_white_light"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_button"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,228 @@
+{
+  "project_info": {
+    "project_number": "15437329303",
+    "firebase_url": "https://actionyamalaab.firebaseio.com",
+    "project_id": "actionyamalaab",
+    "storage_bucket": "actionyamalaab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15437329303:android:9b3d72e430998c37",
+        "android_client_info": {
+          "package_name": "com.malaab.ya.action.actionyamalaab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15437329303-d95jstbghd2co4atddnpdejbo5tk2irm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab",
+            "certificate_hash": "e9c8c9f2e9b439279497a3be853eb7c70dbd58d0"
+          }
+        },
+        {
+          "client_id": "15437329303-60gojattjdbsfjl1ilkq0kovfqjuvfg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab",
+            "certificate_hash": "8d9b87f3d5539bacfd4bf95b854e738d3b78eb04"
+          }
+        },
+        {
+          "client_id": "15437329303-bmnarcrugluvvh9v0g60qnjoabh5qit7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab",
+            "certificate_hash": "c28d66bd9b872a3319368e856063a379ab75d80d"
+          }
+        },
+        {
+          "client_id": "15437329303-ldbabqvuor3bif89uadcmqm9nqali18p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab",
+            "certificate_hash": "f9ee98214432a90506776741882db86f5fc31a72"
+          }
+        },
+        {
+          "client_id": "15437329303-a4a1bvt9k9q9nvr9gvmjlk061tu4kdjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab",
+            "certificate_hash": "7c13e68ccb0e8c2f7b4cf50e1696e0eb35c622f3"
+          }
+        },
+        {
+          "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgPJLARzGdUPhqx9aJ2mXW4u71hTOvPUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15437329303-60spfiadsqtq5402a4va17p0bu34jppa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.malab.ActionYaMalaab"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15437329303:android:95ab5f987286c514",
+        "android_client_info": {
+          "package_name": "com.malaab.ya.action.actionyamalaab.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15437329303-ke02iprdjcl0isece1nakhe0e1alg8l6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab.admin",
+            "certificate_hash": "e9c8c9f2e9b439279497a3be853eb7c70dbd58d0"
+          }
+        },
+        {
+          "client_id": "15437329303-hm9booecbec2leqrbtc3tcchi1qq062g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab.admin",
+            "certificate_hash": "7c13e68ccb0e8c2f7b4cf50e1696e0eb35c622f3"
+          }
+        },
+        {
+          "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgPJLARzGdUPhqx9aJ2mXW4u71hTOvPUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15437329303-60spfiadsqtq5402a4va17p0bu34jppa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.malab.ActionYaMalaab"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15437329303:android:8c3c828e92044535",
+        "android_client_info": {
+          "package_name": "com.malaab.ya.action.actionyamalaab.owner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15437329303-9c41ud5t1ge3dfikc1ef20dv1ugnre78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab.owner",
+            "certificate_hash": "e9c8c9f2e9b439279497a3be853eb7c70dbd58d0"
+          }
+        },
+        {
+          "client_id": "15437329303-34prvadqatg0f4eqft794pmva6j27m4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab.owner",
+            "certificate_hash": "d94d1a2b171625747c16340e451f6e31e0339d68"
+          }
+        },
+        {
+          "client_id": "15437329303-g9biv1vqgcb1885p5o4b3dla4kk061m2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab.owner",
+            "certificate_hash": "c28d66bd9b872a3319368e856063a379ab75d80d"
+          }
+        },
+        {
+          "client_id": "15437329303-ktv7javu4rnas66a9o9k482807nmr5h0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.malaab.ya.action.actionyamalaab.owner",
+            "certificate_hash": "7c13e68ccb0e8c2f7b4cf50e1696e0eb35c622f3"
+          }
+        },
+        {
+          "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgPJLARzGdUPhqx9aJ2mXW4u71hTOvPUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15437329303-knfdr3sltlhdjfv41p79roklkoilu02e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15437329303-60spfiadsqtq5402a4va17p0bu34jppa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.malab.ActionYaMalaab"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

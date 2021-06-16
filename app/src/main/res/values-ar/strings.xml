@@ -1,0 +1,309 @@
+<resources>
+    <string name="app_name">أكشن ياملعب</string>
+
+    <!--play store-->
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+
+    <string name="google_maps_key">AIzaSyB-qiVqhwPV7RnMylFDRstycrTpo-sSCe4</string>
+
+    <string name="title_favourite">المفضلة</string>
+    <string name="title_map">الملاعب الأقرب لك</string>
+    <string name="title_change_location">تغير موقعك</string>
+    <string name="title_aboutus">عن التطبيق</string>
+    <string name="title_contactus">راسلنا</string>
+    <string name="title_terms_conditions">سياسة التطبيق</string>
+    <string name="title_my_profile">صفحتي الشخصية</string>
+    <string name="title_my_rewards">مكافآتي</string>
+    <string name="title_my_bookings">حجوزاتي</string>
+    <string name="title_search">البحث</string>
+    <string name="title_price">السعر</string>
+    <string name="title_region">المنطقة</string>
+    <string name="title_playground_size">حجم الملعب</string>
+    <string name="title_image_source">اختر الصوره</string>
+    <string name="title_datetime_select">اختر الوقت والتاريخ</string>
+    <string name="title_budget_select">حدد ميزانيتك</string>
+    <string name="title_region_select">اختر المنطقة</string>
+    <string name="title_city_select">اختر المدينة</string>
+    <string name="title_direction_select">اختر الجهة</string>
+    <string name="title_age_select">حدد الفئة العمرية</string>
+    <string name="title_size_select">اختر حجم الملعب</string>
+    <string name="title_duration_select">اختر المدة</string>
+    <string name="title_invitees_select">عدد المرافقين</string>
+    <string name="title_duration">المدة</string>
+    <string name="title_size">حجم الملعب</string>
+    <string name="title_app_language">لغة التطبيق</string>
+    <string name="title_notifications">الإشعارات</string>
+    <string name="title_offers">العروض</string>
+    <string name="title_messages">الرسائل</string>
+    <string name="title_management">إدارة التطبيق</string>
+
+
+    <string name="version">نسخة التطبيق</string>
+    <string name="title">العنوان</string>
+
+    <string name="username">الأسم</string>
+    <string name="userid">الرمز الخاص بك</string>
+    <string name="password">الرقم السري</string>
+    <string name="verification_code">رمز التفعيل</string>
+    <string name="old_password">الرقم السري القديم</string>
+    <string name="new_password">الرقم السري الجديد</string>
+    <string name="confirm_password">تأكيد الرقم السري</string>
+    <string name="name">الأسم</string>
+    <string name="fName">الأسم الأول</string>
+    <string name="lName">الأسم الأخير</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="dob">تاريخ الميلاد</string>
+    <string name="contacts">رقم التواصل</string>
+    <string name="phone_no">رقم جوالك</string>
+    <string name="age">العمر</string>
+    <string name="referral_code">كود الكابتن</string>
+    <string name="address">العنوان</string>
+    <string name="my_address">عنواني</string>
+    <string name="address_1">عنوانك الأول</string>
+    <string name="address_2">عنوانك الثاني</string>
+    <string name="city">المدينة</string>
+    <string name="direction">الجهه</string>
+    <string name="postal_code">الرمز البريدي</string>
+    <string name="state">المنطقة</string>
+    <string name="status">الحالة</string>
+    <string name="country">الدولة</string>
+    <string name="price">%.0f ر.س %s</string>
+    <string name="size">%d x %d</string>
+    <string name="message">رسالة</string>
+    <string name="language">اللغة</string>
+    <string name="playground_name">اسم الملعب: %s</string>
+    <string name="show">عرض</string>
+
+    <string name="share">مشاركة</string>
+    <string name="location">موقع الملعب</string>
+    <string name="favourite">أضف للمفضلة</string>
+
+    <string name="ball">كرة</string>
+    <string name="water">ماء شرب</string>
+    <string name="grass">أرضية عشبية</string>
+    <string name="wc">دورات مياه</string>
+    <string name="shower">أماكن استحمام</string>
+
+    <string name="rewards">المكافآت</string>
+    <string name="bookings">الحجوزات</string>
+    <string name="settings">الضبط</string>
+    <string name="profile">الصفحة الشخصية</string>
+
+    <string name="request_verification_code">اطلب رمز التفعيل</string>
+    <string name="verify">تحقق</string>
+
+    <string name="register">سجل</string>
+
+    <string name="content_description">جاري التحميل</string>
+
+    <string name="password_strength_weak">ضعيف يا كابتن</string>
+    <string name="password_strength_medium">متوسط ياكابتن</string>
+    <string name="password_strength_strong">ممتاز يا كابتن</string>
+    <string name="password_strength_very_strong">قوي جدا يا كابتن</string>
+
+    <string name="drawer_open">مفتوح</string>
+    <string name="drawer_close">مغلق</string>
+
+    <string name="login_to_account">سجل دخولك من هنا</string>
+    <string name="login_by_phone">سجل دخولك عن طريق رقم جوالك</string>
+
+    <string name="individual">تمارين</string>
+    <string name="full">ملاعب</string>
+
+    <string name="upcoming_bookings">الحجوزات القادمة</string>
+    <string name="past_bookings">الحجوزات السابقة</string>
+    <string name="fines">الغرامات</string>
+
+    <string name="summary">ملخص الحجز</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت: %s - %s</string>
+    <string name="time_start">وقت البدأ</string>
+    <string name="time_end">وقت الانهاء</string>
+    <string name="type">نوع الحجز</string>
+    <string name="players">عدد اللاعبين</string>
+    <string name="payment_method">طريقة الدفع</string>
+    <string name="payment_cash">نقدا في الملعب</string>
+
+    <string name="data_zero">0</string>
+
+    <string name="status_pending">قيد التأكيد</string>
+    <string name="status_approved">مؤكد</string>
+    <string name="status_rejected">مرفوض</string>
+    <string name="status_cancelled">ملغى</string>
+
+    <string name="no_player">لايوجد</string>
+    <string name="one_player">1 لاعب</string>
+    <string name="two_player">2 لاعبين</string>
+    <string name="three_player">3 لاعبين</string>
+    <string name="four_player">4 لاعبين</string>
+    <string name="five_player">5 لاعبين</string>
+
+    <string name="fine_amount">%.0f ريال</string>
+
+    <string name="fine_type">نوع الغرامة: </string>
+    <string name="fine_payment">عدم الدفع</string>
+    <string name="fine_attendance">عدم الحضور</string>
+
+    <string name="fine_status_paid">تم الدفع</string>
+    <string name="fine_status_not_paid">لم يتم الدفع</string>
+
+    <string name="booking_type_no_format">نوع الحجز: %s</string>
+    <string name="playground_name_no_format">اسم الملعب: </string>
+    <string name="time_no_format">الوقت: </string>
+    <string name="date_no_format">التاريخ: </string>
+    <string name="amount_no_format">المبلغ: </string>
+    <string name="status_no_format">الحالة: </string>
+
+    <!-- BUTTONS -->
+    <string name="welcome">مرحبا يا كابتن</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="log_out">تسجيل خروج</string>
+    <string name="login_here">سجل من هنا</string>
+    <string name="forgot_password">نسيت رقمك السري ؟</string>
+    <string name="skip">تخطي</string>
+    <string name="arabic">English</string>
+    <string name="update">تحديث البيانات</string>
+    <string name="join">إنضمام</string>
+    <string name="continuee">متابعة</string>
+    <string name="book_now">احجز الان</string>
+    <string name="cancel">إلغاء الحجز</string>
+    <string name="cancel_join">إلغاء الإنضمام</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+    <!-- DESCRIPTIONS -->
+    <string name="app_name_en">أكشن يا ملعب</string>
+    <string name="features">الخصائص</string>
+    <string name="contact_us">تواصل معنا يا كابتن</string>
+    <string name="contact_us_email">actionyamalab@gmail.com</string>
+    <string name="contact_us_twitter">\@actionyamalab</string>
+    <string name="contact_us_phone">00966501940080</string>
+    <string name="designed_by">التصميم و التطوير بواسطة منصة ابعاد</string>
+    <string name="aboutus_about">تطبيق لحجز ملاعب كرة القدم حيث يوفر لك عناء الذهاب و البحث عن ملعب واستهلاكك لوقتك و وقود مركبتك ماعليك الا التسجيل والحجز وأكشنها</string>
+    <string name="aboutus_point1">إمكانية حجز ملعب في الوقت واليوم الذي تريده</string>
+    <string name="aboutus_point2">إمكانية البحث وإيجاد الملاعب الأقرب إليك بحسب موقعك الجغرافي</string>
+    <string name="aboutus_point3">يمكنك البحث عن الحجوزات بالتاريخ وحجم الملعب والسعر الذي يناسبك</string>
+    <string name="aboutus_point4">سهولة استخدام التطبيق لحجزك ولمتابعة حجوزاتك السابقة والقادمة</string>
+    <string name="aboutus_point5">خدمة الحجز الفردي وذلك لمن يريد اللعب ولايملك اصدقاء او عدد كافي للعب كرة القدم مع ميزة تحديد الفئة العمرية التي تود اللعب معهم</string>
+    <string name="aboutus_point6">الغرامات : عدم حضورك بعد تأكيد حجزك يعرضك لدفع كامل المبلغ أو إيقاف حسابك</string>
+    <string name="terms_point1">الدفع : يتم دفع المبلغ المطلوب منك نقداً في الملعب  قبل المبارة والتأكد من تسجيل  حضورك من قبل صاحب الملعب لكي لا يترتب على ذلك أي غرامه مالية او ايقاف حسابك</string>
+    <string name="terms_point2">الحجز والالغاء :"\n" -ملاعب:  في حال قيامك بالحجز  سيتم التواصل معك على رقم جوالك او عن طريق المراسلة وكذالك  سيتم ارسال لك جميع بيانات الملعب تستطيع يا كابتن التواصل مع صاحب الملعب وتأكيد حجزك في حل رغبتك بإلغاء حجزك تذهب الى الملف الشخصي/ حجوزاتي / الحجوزات القادمة , الغاء الحجز ."\n\n" -تمارين : تستطيع الحجز بحسب الفئة العمرية المناسبة لك يوجد ثلاث فئات عمرية في التطبيق "\n" الاولى : 8 الى 12 سنة"\n"الثانية :  13 الى 17 سنة"\n"
+ الثالثة : 18ومافوق"\n"-كذلك تستطيع ان تقوم بأصطحاب معك مرافق او مرافقيين للتمرين.
+</string>
+    <string name="terms_point3">-الغاء حجزك عن طريق الملف الشخصي/ حجوزاتي / الحجوزات القادمة / الغاء الانضمام .</string>
+    <string name="terms_point4">التعديل: يحق لتطبيق اكشن يا ملعب  في أي وقت تغيير هذه الشروط  و الاحكام  و إشعاركم  بذلك عن طريق الرسائل او التنبيهات</string>
+
+    <string name="dialog_booking_cancel_title">إلغاء الحجز</string>
+    <string name="dialog_booking_cancel_msg">هل أنت متأكد من إلغاء الحجز؟</string>
+
+    <string name="dialog_booking_fine_title">غرامة إلغاء الحجز!</string>
+    <string name="dialog_booking_fine_msg">عزيزي الكابتن الغاء الحجز الان سوف يتسبب باصدار غرامة في حسابك بسبب قرب موعد المباراة والتي سوف تبدأ في غضون أقل من ساعة!؟</string>
+
+    <!-- MESSAGES -->
+    <string name="msg_user_not_login">فشل في التحقق ، تأكد من رقم الجوال و سجل دخولك مره ثانية يا كابتن</string>
+    <string name="msg_user_need_login">سجل دخولك يا كابتن لفتح هذه الخاصية</string>
+    <string name="msg_no_account">ما عندك حساب ؟ بسيطة سجل الأن</string>
+    <string name="msg_have_account">عندك حساب ؟ سجل دخولك من هنا</string>
+    <string name="msg_exit">اضغط مره ثانية يا كابتن للخروج</string>
+    <string name="msg_success">تم حفظ التغيرات بنجاح يا كابتن</string>
+    <string name="msg_day_select">اختر يوم ثاني</string>
+    <string name="msg_age_select">اختر الفئة العمرية المناسبة لعمرك للإنضمام معهم</string>
+    <string name="msg_no_day_select">اختر اليوم اولأ</string>
+    <string name="msg_no_time_select">اختر الوقت اولأ</string>
+    <string name="msg_user_same_booking">تم الانضمام, تستطيع الغاء الانضمام من الحجوزات القادمة</string>
+    <string name="msg_user_same_booking_cancel">تم انظمامك مسبقا لهذه الفئة العمرية، هل ترغب بإلغاء الإنضمام؟</string>
+    <string name="msg_players_number_exceed">عذرا يمكنك دعوة %d لاعبين فقط!</string>
+    <string name="msg_individual_booking_closed">تم اكتمال عدد اللاعبين المنضمين للفئات العمرية</string>
+<string name="msg_individual_booking_closed_confirmed">تم اغلاق الانضمام لهذا الحجز لحصول فئة عمرية على تأكيد الحجز</string>
+    <string name="msg_individual_booking_completed">تم اكتمال العدد للفئة العمرية %s للحجز الفردي على ملعب %s</string>
+    <string name="msg_booking_success_individual">تم اكتمال طلب حجزك بنجاح ياكابتن وسوف يتم إبلاغك عند اكتمال عدد اللاعبين وتأكيد حجزك</string>
+
+    <string name="msg_booking_success">تم اكتمال طلب حجزك بنجاح يا كابتن و سوف يتم إبلاغك عند تأكيد حجزك</string>
+    <string name="msg_booking_individual_cancel_success">تم إلغاء إنضمامك بنجاح!</string>
+    <string name="msg_gps_enable">خدمة تحديد المواقع معطلة، هل ترغب في تشغيلها؟</string>
+    <string name="msg_gps_error">خدمة تحديد المواقع معلطة، يرجى تفعيل الخدمة لاستخدام هذه الخدمة!</string>
+    <string name="msg_contactus_success">تم إرسال رسالتك بنجاح، سيتم التواصل معك قريبا!</string>
+    <string name="msg_no_rewards">للأسف لايوجد مكافآت في حسابك!</string>
+    <string name="msg_no_rewards_description">شارك واحجز عن طريق التطبيق لترقية حسابك للحصول على مكافآت</string>
+    <string name="msg_share_playground_full">احجز واكشنها مع اصحابك في ملعب %s. \n %s</string>
+    <string name="msg_share_playground_individual">حدد فئتك العمرية وانضم مع اصحابك في ملعب %s. احجز واكشنها \n %s </string>
+
+    <!-- HINTS -->
+    <string name="hint_phone_no">رقم الجوال</string>
+    <string name="hint_search">إبحث عن ملعبك…</string>
+
+
+    <!-- NOTIFICATION -->
+    <string name="notification_new_captain_title">تم تسجيلك بنجاح ياكابتن</string>
+    <string name="notification_new_captain_message">احجز واكشنها</string>
+
+    <string name="BOOKING_ADMIN_APPROVED_title">تمت الموافقة على الحجز من قبل مسؤول الحجز</string>
+    <string name="BOOKING_ADMIN_APPROVED_message">العب واكشنها</string>
+
+    <string name="notification_booking_confirmed">مبروك يا كابتن تم تأكيد حجزك في الملعب</string>
+    <string name="notification_booking_confirmed_message">العب واكشنها</string>
+
+    <string name="notification_booking_rejected">للأسف تم رفض حجزك</string>
+    <string name="notification_booking_rejected_message">تقدر تحجز في وقت ثاني ياكابتن</string>
+    <string name="notification_individual_booking_confirmed">تم تأكيد انضمامك ياكابتن</string>
+
+    <string name="notification_individual_completed_title">تم تأكيد حجزك ياكابتن</string>
+    <string name="notification_individual_completed_message">تم تأكيد حجزك الفردي، العب واكشنها!</string>
+
+    <string name="notification_individual_not_completed_title">لم يتم تأكيد انضمامك</string>
+    <string name="notification_individual_not_completed_message">عذرا، تم تأكيد فئة عمرية ثانية. حاول مع حجوزات اخرى</string>
+
+    <string name="notification_new_playground_title">تم إضافة ملاعب جديدة</string>
+    <string name="notification_new_playground_message">احجز واكشنها</string>
+
+    <string name="notification_new_individual_playground_title">كيف التحديات معاك؟</string>
+    <string name="notification_new_individual_playground_message">احجز فردي واكشنها</string>
+
+    <string name="notification_new_reward">عندك مكافأة جديدة ياكابتن</string>
+
+    <string name="notification_contact_us_title">رسالة جديدة</string>
+    <string name="notification_contact_us_message">لديك رسالة جديدة من ادارة التطبيق!</string>
+
+    <string name="notification_block">تم توقيف حسابك</string>
+    <string name="notification_block_message">الرجاء التواصل مع ادارة التطبيق</string>
+
+    <string name="notification_fine_issued_title">غرامة جديدة</string>
+    <string name="notification_fine_issued_message">تم إصدار غرامة بحقك لعدم التزامك بحضور حجزك الاخير</string>
+
+    <!-- PERMISSIONS -->
+    <string name="permissions_dialog_title">تحتاج الى تصريح للدخول</string>
+    <string name="permissions_dialog_message">%s لم يستطيع التطبيق تحديد موقعك بسبب خطأ أو تعطيل الخدمة من طرفك، يرجى تفعيل خاصية تحديد الموقع يدويا عن طريق الضبط الخاص بجهازك</string>
+    <string name="permissions_dialog_button_positive">نعم ، فتح الظبط</string>
+
+    <!-- Errors -->
+    <string name="error">تم حدوث خطأ، حاول مره أخرى</string>
+    <string name="error_no_data">لا يوجد بيانات لعرضها!</string>
+
+    <string name="error_email_already_registered">البريد الإلكتروني مستخدم من قبل حساب آخر</string>
+    <string name="error_phone_no_format">رقم الجوال خطأ، تأكد من ادخاله بشكل صحيح</string>
+    <string name="error_many_request">حدث خطأ عند الطلب ، حاول مره ثانية يا كابتن</string>
+    <string name="error_verification_code">رمز التفعيل غير صحيح او تم انتهاء صلاحيته</string>
+    <string name="error_user_guest">فضلا قم بتسجيل الدخول للحصول على نتائج أفصل</string>
+    <string name="error_user_inactive">حسابك غير مفعل حاليا، سوف يتم تفعيله قريبا من الإدارة في أسرع وقت</string>
+    <string name="error_user_owner">عفوا، حسابك غير مصرح لأستخدام هذا التطبيق</string>
+    <string name="error_user_not_exist">للأسف ، لم يتم تسجيلك بعد</string>
+
+    <string name="error_empty_field">الرجاء تعبئة هذه الخانة</string>
+    <string name="error_invalid_email">البريد الإلكتروني غير معرف</string>
+    <string name="error_no_connection">غير متصل ، حاول الإتصال بالإنترنت</string>
+    <string name="error_timeout">لم يتم اكمال طلبك بسبب ضعف الشبكه ، حاول مره اخرى</string>
+    <string name="error_password_not_matched">الرقم السري غير متطابق</string>
+    <string name="error_forgot_password">المستخدم غير موجود</string>
+    <string name="msg_booking_individual_success">تم انضمامك بنجاح , وسيتم ارسال تنبيهك عند اكتمال عدد الاعبين وتأكيد حجزك.</string>
+
+    <string name="error_upload_image_size">"يجب ان تكون حجم الصورة اقل من ١ ميجا بايت "</string>
+    <string name="error_share_no_provider">مصدر الصوره غير موضح</string>
+    <string name="owner">المالك</string>
+    <string name="owner_info">بيانات مالك الملعب:</string>
+    <string name="guard_info">بيانات حارس الملعب</string>
+    <string name="mobile">رقم الاتصال</string>
+    <string name="guard">الحارس</string>
+    <string name="amount_priceIndividual">المبلغ المطلوب</string>
+
+</resources>

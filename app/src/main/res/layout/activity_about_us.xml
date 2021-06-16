@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.aboutus.AboutUsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/padding_15">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/img_size_xlarge"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginTop="@dimen/margin_15"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/lbl_title"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginStart="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/app_name_en"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginStart="@dimen/margin_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:text="@string/aboutus_about"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_title" />
+
+
+        <TextView
+            android:id="@+id/lbl_description"
+            style="@style/Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/features"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_point1"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_10"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_profile_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_description" />
+
+        <TextView
+            android:id="@+id/lbl_point1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:gravity="start"
+            android:padding="@dimen/padding_5"
+            android:text="@string/aboutus_point1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintBottom_toBottomOf="@+id/img_point1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_point1"
+            app:layout_constraintTop_toTopOf="@+id/img_point1" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_point2"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_margin="@dimen/margin_5"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_profile_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_point1" />
+
+        <TextView
+            android:id="@+id/lbl_point2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:gravity="start"
+            android:padding="@dimen/padding_5"
+            android:text="@string/aboutus_point2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_point2"
+            app:layout_constraintTop_toTopOf="@+id/img_point2" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_point3"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_10"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_profile_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_point2" />
+
+        <TextView
+            android:id="@+id/lbl_point3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:gravity="start"
+            android:padding="@dimen/padding_5"
+            android:text="@string/aboutus_point3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_point3"
+            app:layout_constraintTop_toTopOf="@+id/img_point3" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_point4"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_10"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_profile_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_point3" />
+
+        <TextView
+            android:id="@+id/lbl_point4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:gravity="start"
+            android:padding="@dimen/padding_5"
+            android:text="@string/aboutus_point4"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_point4"
+            app:layout_constraintTop_toTopOf="@+id/img_point4" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_point5"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_10"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_profile_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_point4" />
+
+        <TextView
+            android:id="@+id/lbl_point5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:gravity="start"
+            android:padding="@dimen/padding_5"
+            android:text="@string/aboutus_point5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_point5"
+            app:layout_constraintTop_toTopOf="@+id/img_point5" />
+
+
+        <TextView
+            android:id="@+id/lbl_contactUs"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_point5" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/icon_whatsapp"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_margin="@dimen/margin_5"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_contactUs"
+            app:srcCompat="@drawable/icon_whatsapp" />
+
+        <TextView
+            android:id="@+id/lbl_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/contact_us_phone"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintBottom_toBottomOf="@id/icon_whatsapp"
+            app:layout_constraintStart_toEndOf="@id/icon_whatsapp"
+            app:layout_constraintTop_toTopOf="@+id/icon_whatsapp" />
+
+
+        <TextView
+            android:id="@+id/txt_sep1"
+            style="@style/Separator_Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_5"
+            app:layout_constraintStart_toStartOf="@id/icon_whatsapp"
+            app:layout_constraintTop_toBottomOf="@+id/icon_whatsapp" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/icon_twitter"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_margin="@dimen/margin_5"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sep1"
+            app:srcCompat="@drawable/icon_twitter" />
+
+        <TextView
+            android:id="@+id/lbl_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/contact_us_twitter"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/icon_twitter"
+            app:layout_constraintStart_toEndOf="@id/icon_twitter"
+            app:layout_constraintTop_toTopOf="@+id/icon_twitter" />
+
+
+        <TextView
+            android:id="@+id/txt_sep2"
+            style="@style/Separator_Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/icon_twitter"
+            app:layout_constraintTop_toBottomOf="@+id/icon_twitter" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/icon_instagram"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_margin="@dimen/margin_5"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sep2"
+            app:srcCompat="@drawable/icon_instagram" />
+
+        <TextView
+            android:id="@+id/lbl_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/contact_us_twitter"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintBottom_toBottomOf="@id/icon_instagram"
+            app:layout_constraintStart_toEndOf="@id/icon_instagram"
+            app:layout_constraintTop_toTopOf="@+id/icon_instagram" />
+
+
+        <TextView
+            android:id="@+id/txt_sep3"
+            style="@style/Separator_Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_5"
+            app:layout_constraintStart_toStartOf="@id/icon_instagram"
+            app:layout_constraintTop_toBottomOf="@+id/icon_instagram" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/icon_email"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_margin="@dimen/margin_5"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_5"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sep3"
+            app:srcCompat="@drawable/icon_gmail" />
+
+        <TextView
+            android:id="@+id/lbl_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/contact_us_email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_default"
+            app:layout_constraintBottom_toBottomOf="@id/icon_email"
+            app:layout_constraintStart_toEndOf="@id/icon_email"
+            app:layout_constraintTop_toTopOf="@+id/icon_email" />
+
+
+        <TextView
+            android:id="@+id/txt_sep4"
+            style="@style/Separator_Horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_5"
+            app:layout_constraintStart_toStartOf="@id/icon_email"
+            app:layout_constraintTop_toBottomOf="@+id/icon_email" />
+
+
+        <TextView
+            android:id="@+id/lbl_createdBy"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15"
+            android:padding="@dimen/padding_5"
+            android:text="@string/designed_by"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_subheading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sep4" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_appaddit_logo"
+            android:layout_width="@dimen/img_size_medium"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_createdBy" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

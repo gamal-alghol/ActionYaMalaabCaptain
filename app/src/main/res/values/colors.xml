@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#174d03</color>
+    <color name="colorPrimaryDark">#FF113803</color>
+    <color name="colorAccent">#4CAF50</color>
+
+    <color name="colorAccent_transparent">#704caf50</color>
+
+    <color name="glass_background">#8acacaca</color>
+    <color name="old_background">#203234</color>
+    <color name="cold_start_bg">#6abd47</color>
+
+    <color name="xlight_gray">#ececec</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray_transparent">#aadbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#ababab</color>
+    <color name="dark_gray">#404142</color>
+    <color name="gray_blue">#5b5e65</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="google">#d34836</color>
+
+    <color name="google_color">#DC4E41</color>
+    <color name="facebook_color">#3B5998</color>
+
+    <!--Design colors-->
+    <color name="red">#F44336</color>
+    <color name="green">#00a651</color>
+    <color name="green_apple">#6bbe48</color>
+    <color name="light_green">#66bb6a</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#e69500</color>
+    <color name="yellow">#fff44f</color>
+    <color name="gold">#FFD600</color>
+
+    <!--Buttons colors-->
+    <color name="btn_background">#3b3b3b</color>
+
+    <color name="separator">#99000000</color>
+
+    <!--SwipeRefreshLayout Colors-->
+    <color name="pink">#FF4081</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="lime">#6abd47</color>
+
+</resources>
